@@ -15,14 +15,16 @@ fetch(endpoint)
     .then(response => response.json())
     .then(data => {
         data.forEach((img) => {
-            const { url } = img
-            console.log(url);
+            const { title, url, date } = img
+            console.log(title, url, date);
 
             const imgMarkUp = `
-                <div class="col-lg col-md col-sm">
+                <div class="col-sm col-md col-lg ">
                     <div class="card">
+                    <h2>${title}</h2>
                       <img src="${url}">
                       <img class="pin" src="./img/pin.svg">
+                      <h2>${date}</h2>
                     </div>
                 </div>
             `

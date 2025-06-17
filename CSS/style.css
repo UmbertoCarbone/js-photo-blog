@@ -63,7 +63,8 @@ body {
 
 .card {
     background-color: white;
-    /* padding: 1rem; */
+    margin: 1rem;
+    padding: 1rem;
     position: relative;
     display: block;
 
@@ -71,32 +72,22 @@ body {
 
 .pin {
     position: absolute;
-    top: 10px;
+
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
 }
 
-.col-lg {
-    width: calc(100% / 12 * 4)
-}
 
-.col-md {
-    width: calc(100% / 12 * 6)
-}
-
-.col-sm {
-    width: calc(100% / 12 * 12)
-}
 
 /* Query */
 
-@media screen and (min-width: 993px) {
+/* @media screen and (min-width: 993px) {
 
-    .col {
+    .col-xl {
         width: calc(100% / 12 * 4)
     }
-}
+} */
 
 
 @media screen and (max-width: 992px) {
