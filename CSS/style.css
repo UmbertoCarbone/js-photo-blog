@@ -59,15 +59,11 @@ body {
     flex-wrap: wrap;
 }
 
-.col {
-    /* width: calc(100% / 12 * 4); */
-    padding: 10px;
 
-}
 
 .card {
     background-color: white;
-    padding: 1rem;
+    /* padding: 1rem; */
     position: relative;
     display: block;
 

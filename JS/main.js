@@ -1,12 +1,12 @@
 const endpoint = "https://lanciweb.github.io/demo/api/pictures/"
 
-const cardEl = document.getElementById("card")
+const cardEl = document.querySelector(".card")
 console.log(cardEl)
 
-const colEl = document.getElementById("col")
+const colEl = document.querySelector(".col")
 console.log(colEl)
 
-const rowEl = document.getElementById("row")
+const rowEl = document.querySelector(".row")
 console.log(rowEl)
 
 
@@ -14,8 +14,8 @@ console.log(rowEl)
 fetch(endpoint)
     .then(response => response.json())
     .then(data => {
-        console.log(data)
 
+        console.log(data)
 
     }).catch(error => {
         console.error(error);
