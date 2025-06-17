@@ -19,7 +19,7 @@ fetch(endpoint)
             console.log(title, url, date);
 
             const imgMarkUp = `
-                <div class="col-sm col-md col-lg ">
+                <div class="col-sm col-md col-lg col-xl ">
                     <div class="card">
                     <h2>${title}</h2>
                       <img src="${url}">

@@ -25,7 +25,7 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 75px;
+    font-size: 60px;
 
 }
 
@@ -52,6 +52,7 @@ img {
 
 body {
     background-image: url(../img/cork.png);
+
 }
 
 .row {
@@ -72,9 +73,9 @@ body {
 
 .pin {
     position: absolute;
-
     left: 50%;
     transform: translateX(-50%);
+
     z-index: 10;
 }
 
@@ -82,18 +83,26 @@ body {
 
 /* Query */
 
-/* @media screen and (min-width: 993px) {
+@media screen and (min-width: 993px) {
 
     .col-xl {
         width: calc(100% / 12 * 4)
     }
-} */
+
+    .pin {
+        width: 65px;
+    }
+}
 
 
 @media screen and (max-width: 992px) {
 
     .col-sm {
         width: calc(100% / 12 * 4)
+    }
+
+    .pin {
+        width: 60px;
     }
 }
 
@@ -102,11 +111,19 @@ body {
     .col-md {
         width: calc(100% / 12 * 6)
     }
+
+    .pin {
+        width: 55px;
+    }
 }
 
 
 @media screen and (max-width: 568px) {
     .col-lg {
         width: calc(100% / 12 *12)
+    }
+
+    .pin {
+        width: 50px;
     }
 }
