@@ -19,14 +19,12 @@ fetch(endpoint)
             console.log(url);
 
             const imgMarkUp = `
-             <div class="row">
-                <div class="col">
+                <div class="col-lg col-md col-sm">
                     <div class="card">
                       <img src="${url}">
                       <img class="pin" src="./img/pin.svg">
                     </div>
                 </div>
-            </div>
             `
             rowEl.insertAdjacentHTML("beforeend", imgMarkUp)
 
