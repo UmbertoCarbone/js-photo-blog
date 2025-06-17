@@ -1,0 +1,92 @@
+/* Colore 1* postit #92C952 */
+/* Colore 2* postit #771796 */
+/* Colore 3* postit #24F355*/
+/* Colore 4* postit #D32776*/
+/* Colore 5* postit #F66B97/*
+/* Colore 6* postit #56A8C2*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.box-header {
+    background-image: url(../img/wall.png);
+    text-align: center;
+    /*  width: 100vh; */
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+.container {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url(../img/cork.png);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    /* width: calc(100% / 12 * 4); */
+    padding: 10px;
+
+}
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    position: relative;
+    display: block;
+}
+
+.pin {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+/* Query */
+
+@media screen and (min-width: 993px) {
+
+    .col {
+        width: calc(100% / 12 * 4)
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+
+    .col {
+        width: calc(100% / 12 * 4)
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .col {
+        width: calc(100% / 12 * 6)
+    }
+}
+
+/* Mobile extra small */
+@media screen and (max-width: 568px) {
+    .col {
+        width: calc(100% / 12 *12)
+    }
+}
