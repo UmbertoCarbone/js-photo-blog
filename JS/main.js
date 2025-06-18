@@ -17,7 +17,7 @@ fetch(endpoint)
     .then(response => response.json())
     .then(data => {
         data.forEach((img) => {
-            const { title, url, date } = img
+            let { title, url, date } = img
             console.log(title, url, date);
 
             const imgMarkUp = `
@@ -39,17 +39,22 @@ fetch(endpoint)
         console.error(error);
     });
 
-
-rowEl.addEventListener("click", function () {
+//qui premo la card e mi esce lo sfondo ombrato con l'img selezionata
+rowEl.addEventListener("click", () => {
+    const imgMark = `
+    <h2>${title}</h2>
+    <img src="${url}">
+    <h2>${date}</h2>
+`
+    overlayContentEl.innerHTML = imgMark;
 
     overlayEl.style.display = 'flex';
-
-    /* overlayContentEl. = ` `; */
-
+    /* ` <img src="${url}"> `;  */
 });
 
+// qui quando clicclo sul buttom, torna alla pagina principale
 closeBtnEl.addEventListener('click', () => {
     overlayEl.style.display = 'none';
 });
-/* overlayEl.style.display = 'block'; */
+
 
