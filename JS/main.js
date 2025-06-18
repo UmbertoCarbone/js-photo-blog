@@ -41,15 +41,20 @@ fetch(endpoint)
 
 //qui premo la card e mi esce lo sfondo ombrato con l'img selezionata
 rowEl.addEventListener("click", () => {
-    const imgMark = `
-    <h2>${title}</h2>
-    <img src="${url}">
-    <h2>${date}</h2>
-`
-    overlayContentEl.innerHTML = imgMark;
 
     overlayEl.style.display = 'flex';
-    /* ` <img src="${url}"> `;  */
+    //NON FUNZIONA
+
+    //uso template literal 
+    const imgMark = ` <div class="col-sm col-md col-lg col-xl ">
+                    <div class="card">
+                    <h2>${title}</h2>
+                      <img src="${url}">
+                      <h2>${date}</h2>
+                    </div>
+                </div> `
+    overlayContentEl.insertAdjacentHTML("beforeend", imgMark)
+
 });
 
 // qui quando clicclo sul buttom, torna alla pagina principale
