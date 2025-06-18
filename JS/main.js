@@ -4,7 +4,14 @@ const endpoint = "https://lanciweb.github.io/demo/api/pictures/"
 const rowEl = document.querySelector(".row")
 console.log(rowEl)
 
+const overlayEl = document.querySelector(".overlay")
+console.log(overlayEl)
 
+const overlayContentEl = document.querySelector(".overlayContent")
+console.log(overlayContentEl)
+
+const closeBtnEl = document.querySelector(".closeBtn")
+console.log(closeBtnEl)
 
 fetch(endpoint)
     .then(response => response.json())
@@ -33,5 +40,16 @@ fetch(endpoint)
     });
 
 
+rowEl.addEventListener("click", function () {
 
+    overlayEl.style.display = 'flex';
+
+    overlayContentEl. = ` `;
+
+});
+
+closeBtnEl.addEventListener('click', () => {
+    overlayEl.style.display = 'none';
+});
+/* overlayEl.style.display = 'block'; */
 

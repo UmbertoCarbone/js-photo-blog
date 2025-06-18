@@ -67,7 +67,7 @@ body {
     margin: 1rem;
     padding: 1rem;
     position: relative;
-    display: block;
+
 
 }
 
@@ -90,10 +90,10 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 30;
-
+    display: none;
 }
 
-.overlay-content {
+.overlayContent {
     background: white;
     padding: 2rem;
     border-radius: 10px;
@@ -103,7 +103,7 @@ body {
     align-items: center;
 }
 
-.close-btn {
+.closeBtn {
     position: absolute;
     top: 20px;
     background-color: black;
