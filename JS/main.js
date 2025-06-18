@@ -44,7 +44,7 @@ rowEl.addEventListener("click", function () {
 
     overlayEl.style.display = 'flex';
 
-    overlayContentEl. = ` `;
+    /* overlayContentEl. = ` `; */
 
 });
 
